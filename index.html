@@ -8,7 +8,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css/" />
 </head>
+
+
 <body>
+<header>
+    <!-- Here is the jumbotron bootstap header  -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">New York Times Search</h1>
+        </div>
+      </div>
+</header>
+
+<!-- card -->
+<main>
+<div class="card">
+    <h5 class="card-header" id="search-parameters">Search Parameters</h5>
+    <div class="card-body">
+        <form id="form">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Search term:</label>
+              <input type="email" class="form-control" id="search-term">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Number of records to retrieve:</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Start year (optional): </label>
+              <input type="number" class="form-control year" id="start-year">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">End year (optional):</label>
+                <input type="number" class="form-control year" id="end-year">
+              </div>
+          </form>
+    </div>
+  </div>
+  <div class="card">
+    <h5 class="card-header" id="articles">Top Articles</h5>
+    <div class="card-body">
+
+    </div>
+  </div>
+
+</main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./assets/script.js"></script>
 </body>
