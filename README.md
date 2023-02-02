@@ -23,7 +23,9 @@ Deployed application should look like the following images:
 
 
 ## Credits
-Thanks to Skills Bootcamp, my tutor, Weng, and my classmates on slack.
+Thanks to Skills Bootcamp.
+
+Made with Sansi Bindika, and Amdalat Jinadu.
 
 ## License
 MIT license.
