@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
-.container{
-    background-color: navy;
-    color: white;
+#narrow-body{
+    margin: auto;
+    width: 60%;
 }
+
+.jumbotron{
+    background-color: #21325a;
+    color: white;
+    border-radius: 3.5px;
+    margin-top: 5px;
+}
+
