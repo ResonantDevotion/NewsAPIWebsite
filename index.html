@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+
+
+<body>
+  <div id="narrow-body">
+<header>
+    <!-- Here is the jumbotron bootstap header  -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-center">📰 New York Times Search</h1>
+        </div>
+      </div>
+</header>
+
+<!-- card -->
+<main>
+<div class="card" id="search-card">
+    <h5 class="card-header" id="search-parameters">📰 Search Parameters</h5>
+    <div class="card-body">
+        <form id="form">
+            <div class="form-group">
+              <label for="search-term">Search term:</label>
+              <input type="text" class="form-control" id="search-term" required>
+            </div>
+            <div class="form-group">
+              <label for="number-of-records">Number of records to retrieve:</label>
+              <input type="number" class="form-control year" id="number-of-records" min="1" max="10"> 
+            </div>
+
+            <div class="form-group">
+              <!-- User can only search articles published between 1851 (when the NYT was founded) and 2023 (current year)-->
+              <label for="start-year">Start year (optional): </label>
+              <input type="number" class="form-control year" id="start-year" min="1851" max="2023">
+            </div>
+            <div class="form-group">
+                <label for="end-year">End year (optional):</label>
+                <input type="number" class="form-control year" id="end-year" min="1851" max="2023">
+              </div>
+
+              <button type="button" class="btn" id="search-btn">🔎 Search</button>
+              <button type="button" class="btn" id="clear-btn">🗑️ Clear results</button>
+          </form>
+
+    </div>
+  </div>
+  <div class="card" id="articles">
+    <h5 class="card-header">Top Articles</h5>
+    <div class="card-body">
+
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <p class="text-center">Made with lots and lots of 🖤</p>
+  </footer>
+</main>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/script.js"></script>
+</body>
+</html>
