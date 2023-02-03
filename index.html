@@ -29,7 +29,7 @@
         <form id="form">
             <div class="form-group">
               <label for="search-term">Search term:</label>
-              <input type="email" class="form-control" id="search-term">
+              <input type="text" class="form-control" id="search-term" required>
             </div>
             <div class="form-group">
               <label for="number-of-records">Number of records to retrieve:</label>
@@ -46,7 +46,7 @@
                 <input type="number" class="form-control year" id="end-year" min="1851" max="2023">
               </div>
 
-              <button type="button" class="btn" id="search-btn">Search</button>
+              <button type="submit" class="btn" id="search-btn">Search</button>
               <button type="button" class="btn" id="clear-btn">Clear results</button>
           </form>
 
